@@ -27,5 +27,14 @@ SET idVeiculos = 3
 WHERE idEmpresa = 1
 
 
+UPDATE ALUGUEL
+SET Dataemissao = '20210805', DataDevolussao = '20210815'
+WHERE idAluguel = 1
 
-DELETE 
+UPDATE ALUGUEL
+SET Dataemissao = '20210815', DataDevolussao = '20210915'
+WHERE idAluguel = 2
+
+UPDATE ALUGUEL
+SET Dataemissao = '20210806', DataDevolussao = '20210810'
+WHERE idAluguel = 3

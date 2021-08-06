@@ -25,3 +25,35 @@ GO
 INSERT INTO ATENDIMENTO(idVeterinario, idPet)
 VALUES (3,1),(3,3),(1,4),(2,2);
 GO
+
+UPDATE ATENDIMENTO
+SET Descricao = 'Exame ouvido' , DataAtend = '20210806'
+WHERE idAtendimento = 1;
+
+UPDATE ATENDIMENTO
+SET Descricao = 'Castração' , DataAtend = '20210807'
+WHERE idAtendimento = 2;
+
+UPDATE ATENDIMENTO
+SET Descricao = 'Exame Olho' , DataAtend = '20210806'
+WHERE idAtendimento = 3;
+
+UPDATE ATENDIMENTO
+SET Descricao = 'Castração' , DataAtend = '20210806'
+WHERE idAtendimento = 4;
+
+UPDATE VETERINARIO
+SET idClinica = 1
+WHERE idVeterinario = 3
+
+UPDATE VETERINARIO
+SET CRMV = 556
+WHERE idVeterinario = 1
+
+UPDATE VETERINARIO
+SET CRMV = 838
+WHERE idVeterinario = 2
+
+UPDATE VETERINARIO
+SET CRMV = 907
+WHERE idVeterinario = 3

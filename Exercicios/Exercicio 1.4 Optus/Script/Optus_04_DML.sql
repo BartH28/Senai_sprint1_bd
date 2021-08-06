@@ -21,3 +21,19 @@ GO
 INSERT INTO ALBUM( nomeAlbum, idArtistas, idEstMusical)
 VALUES ('Solidão',1, 2),('Loucos',2, 3);
 GO
+
+UPDATE ALBUM
+SET daralançamento = '20210806'
+WHERE idALBUM = 2
+
+UPDATE ALBUM
+SET quantMin = '50min'
+WHERE idALBUM = 2
+
+UPDATE ALBUM
+SET Localização = 'Rio de Janeiro'
+WHERE idALBUM = 2
+
+UPDATE ALBUM
+SET Visualização = 'Ativo'
+WHERE idALBUM = 2
